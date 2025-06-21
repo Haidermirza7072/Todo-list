@@ -1,36 +1,124 @@
+/* App.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  min-height: 100vh;
+}
+
 .app {
-  max-width: 400px;
-  margin: 2rem auto;
+  max-width: 500px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
   text-align: center;
-  font-family: sans-serif;
+  color: #333;
+  margin-bottom: 1.5rem;
 }
 
+/* --- Form --- */
 form {
-  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 1.5rem;
 }
 
-input {
-  padding: 0.5rem;
-  width: 70%;
+input[type="text"] {
+  flex: 1;
+  padding: 10px 15px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #5c6bc0;
 }
 
 button {
-  padding: 0.5rem;
-  margin-left: 0.5rem;
-  background-color: teal;
+  padding: 10px 18px;
+  background-color: #5c6bc0;
   color: white;
   border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
 }
 
+button:hover {
+  background-color: #3f51b5;
+}
+
+/* --- ToDo Item --- */
 .todo-item {
   display: flex;
   justify-content: space-between;
-  padding: 0.5rem;
-  border-bottom: 1px solid #ccc;
+  align-items: center;
+  padding: 12px 15px;
+  background-color: #f8f9fa;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.todo-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.todo-item span {
+  flex: 1;
+  font-size: 17px;
+  color: #444;
   cursor: pointer;
 }
 
 .todo-item.completed span {
   text-decoration: line-through;
-  color: gray;
+  color: #999;
+}
+
+.todo-item button {
+  margin-left: 10px;
+  background-color: #e74c3c;
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 14px;
+}
+
+.todo-item button:hover {
+  background-color: #c0392b;
+}
+
+/* --- Responsive --- */
+@media (max-width: 600px) {
+  .app {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  input[type="text"] {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .todo-item span {
+    font-size: 15px;
+  }
 }
