@@ -122,3 +122,151 @@ button:hover {
     font-size: 15px;
   }
 }
+
+
+/* === THEME === */
+
+body {
+  transition: background 0.4s ease;
+}
+
+/* Light mode (default) */
+.app {
+  background: #ffffff;
+  color: #333;
+}
+
+/* Dark mode */
+.app.dark {
+  background: #1e1e2f;
+  color: #f0f0f0;
+  
+}
+
+.app.dark h1 {
+  color: #ffffff;
+}
+
+
+/* Add dark styles for input, buttons, and items */
+.app.dark input[type="text"] {
+  background-color: #2e2e3e;
+  color: #f0f0f0;
+  border: 1px solid #555;
+}
+
+.app.dark button {
+  background-color: #3f51b5;
+}
+
+.app.dark .todo-item {
+  background-color: #2e2e3e;
+  box-shadow: 0 2px 6px rgba(255, 255, 255, 0.05);
+}
+
+/* .app.dark .todo-item.completed span {
+  color: #aaa;
+} */
+.app.dark .todo-item span {
+  color: #ffffff;
+}
+
+
+/* Add space between title and button */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+
+.clear-button {
+  margin-top: 1rem;
+  padding: 10px 18px;
+  background-color: #ff4757;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.3s ease;
+}
+
+.clear-button:hover {
+  background-color: #e84118;
+}
+
+.app.dark .clear-button {
+  background-color: #e84118;
+  color: white;
+}
+.priority {
+  color: white;
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 8px;
+  margin-left: 10px;
+  font-weight: bold;
+}
+/* Priority Dropdown (Form Select) */
+form select {
+  padding: 10px 15px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: #ffffff;
+  color: #333;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form select:focus {
+  border-color: #5c6bc0;
+  box-shadow: 0 0 5px rgba(92, 107, 192, 0.5);
+}
+
+.app.dark form select {
+  background-color: #2e2e3e;
+  color: #f0f0f0;
+  border: 1px solid #555;
+}
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+.filter-buttons button {
+  padding: 8px 16px;
+  background-color: #e0e0e0;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.filter-buttons button:hover {
+  background-color: #c5cae9;
+}
+
+.filter-buttons .active {
+  background-color: #5c6bc0;
+  color: white;
+}
+
+.app.dark .filter-buttons button {
+  background-color: #333;
+  color: #f0f0f0;
+}
+
+.app.dark .filter-buttons button:hover {
+  background-color: #444;
+}
+
+.app.dark .filter-buttons .active {
+  background-color: #3f51b5;
+}

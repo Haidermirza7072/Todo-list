@@ -1,6 +1,6 @@
 # 📝 React To-Do List App
 
-A simple and responsive **To-Do List App** built using **React.js**. Add, delete, and mark tasks as completed — all in a clean and intuitive interface.
+A clean, modern, and responsive **To-Do List App** built using **React.js**. Manage your daily tasks with features like dark mode, priority selection, filtering, and local storage — all in one place.
 
 ---
 
@@ -12,49 +12,53 @@ A simple and responsive **To-Do List App** built using **React.js**. Add, delete
 
 ## 📸 Screenshots
 
-<img src="public/output.png" alt="output" width="400">
+<img src="public/output.png" alt="App Screenshot" width="100%">
 
 ---
 
 ## ⚙️ Features
 
-- ✅ Add new tasks
-- ✅ Auto-numbered task list (e.g., `1. Buy Milk`)
-- ✔️ Mark tasks as completed
-- 🗑️ Delete tasks
-- 🔁 Tasks are saved in browser using **localStorage**
-- 💡 Clean and modern UI with responsive layout
-- ⚛️ Built using React functional components and hooks (`useState`, `useEffect`)
+- ✅ **Add, edit, delete tasks**
+- 🔢 **Task numbering**
+- 🔄 **Mark tasks as completed**
+- 🌗 **Dark / Light mode toggle**
+- 🎯 **Priority levels** (High / Medium / Low)
+- 🔍 **Filter tasks**: All, Active, Completed
+- 🧹 **Clear all tasks** with one click
+- 💾 **Persistent data** with `localStorage`
+- 📱 **Responsive design** for all screens
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Frontend:** React.js
-- **Styling:** CSS
-- **Storage:** LocalStorage (browser)
+- **Frontend:** React.js (Hooks)
+- **Styling:** CSS3
+- **Icons:** Emojis 🎉
 
 ---
 
-## 📂 Project Structure
+## 🧩 Folder Structure
 
 todo-list/
 ├── public/
-│ └── favicon.ico
+│ └── output.png
 ├── src/
 │ ├── components/
 │ │ ├── TodoForm.jsx
-│ │ ├── TodoItem.jsx
-│ │ └── TodoList.jsx
-│ ├── App.jsx
+│ │ ├── TodoList.jsx
+│ │ └── TodoItem.jsx
 │ ├── App.css
-│ └── index.js
+│ └── App.jsx
+├── package.json
+└── README.md
 
 
 ---
 
-## 📦 Installation & Running Locally
+## 📦 Getting Started
 
+### 1. Clone this repository
 ```bash
 git clone https://github.com/your-username/todo-list.git
 cd todo-list
@@ -62,10 +66,7 @@ npm install
 npm start
 
 
-🙋‍♂️ Author
-👤 Haider Mirza
-🔗 GitHub
-📧 haidermirza7072@gmail.com 
-
-⭐ Show Your Support
-If you like this project, please ⭐ star it on GitHub and share!
+🙌 Author
+Haider Mirza
+📬 Connect on LinkedIn
+🧑‍💻 haidermirza7072@gmail.com
